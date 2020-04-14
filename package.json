@@ -1,0 +1,26 @@
+{
+  "name": "webpack-simple",
+  "version": "1.0.0",
+  "description": "webpack打包器学习",
+  "private": true,
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hara-an533/webpack-simple.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hara-an533/webpack-simple/issues"
+  },
+  "homepage": "https://github.com/hara-an533/webpack-simple#readme"
+}
