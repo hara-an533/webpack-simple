@@ -1,4 +1,3 @@
-
 const path = require('path'); //require是node的核心模块之一
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 // const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -11,6 +10,9 @@ module.exports = {
         print: './src/print.js'
     },
     devtool: 'inline-source-map',
+    devServer: {
+        contentBase: './dist'
+    },
     plugins: [
         // new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
