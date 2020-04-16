@@ -1,7 +1,3 @@
-/*loader: 1.下载  2.使用（配置loader）
-  plugins: 1.下载  2.引入  3.使用
-*/
-
 
 const path = require('path'); //require是node的核心模块之一
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -14,11 +10,8 @@ module.exports = {
         app: './src/index.js',
         print: './src/print.js'
     },
+    devtool: 'inline-source-map',
     plugins: [
-        //详细plugins配置
-        // html-webpack-plugin
-        //功能：默认会创建一个空的HTML，自动引入打包输出的所有的资源（JS/CSS）
-        //放入html文件之后，会复制这个html文件，并且自动引入打包输出的所有的资源（JS/CSS）
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             title: 'Output Management',
@@ -30,8 +23,6 @@ module.exports = {
         filename: "[name].bundle.js",
         //输出路径
         path: path.resolve(__dirname, 'dist')
-        //__dirname：可以获取当前文件所属目录的绝对路径
-        //"dist"是出口文件夹的名字
     },
     module: {
         rules: [
